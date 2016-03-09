@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		F93055231C72806F0061BA8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F93055221C72806F0061BA8E /* main.m */; };
 		F93055261C72806F0061BA8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F93055251C72806F0061BA8E /* AppDelegate.m */; };
-		F93055291C72806F0061BA8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93055281C72806F0061BA8E /* ViewController.m */; };
-		F930552C1C72806F0061BA8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F930552A1C72806F0061BA8E /* Main.storyboard */; };
 		F930552E1C72806F0061BA8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F930552D1C72806F0061BA8E /* Assets.xcassets */; };
 		F93055311C72806F0061BA8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F930552F1C72806F0061BA8E /* LaunchScreen.storyboard */; };
+		F930553D1C7281B20061BA8E /* BRPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F930553B1C7281B20061BA8E /* BRPMainViewController.m */; };
+		F930553E1C7281B20061BA8E /* BRPMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F930553C1C7281B20061BA8E /* BRPMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		F93055221C72806F0061BA8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F93055241C72806F0061BA8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F93055251C72806F0061BA8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F93055271C72806F0061BA8E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F93055281C72806F0061BA8E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F930552B1C72806F0061BA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F930552D1C72806F0061BA8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F93055301C72806F0061BA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F93055321C72806F0061BA8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F930553A1C7281B20061BA8E /* BRPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPMainViewController.h; sourceTree = "<group>"; };
+		F930553B1C7281B20061BA8E /* BRPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPMainViewController.m; sourceTree = "<group>"; };
+		F930553C1C7281B20061BA8E /* BRPMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRPMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +60,9 @@
 			children = (
 				F93055241C72806F0061BA8E /* AppDelegate.h */,
 				F93055251C72806F0061BA8E /* AppDelegate.m */,
-				F93055271C72806F0061BA8E /* ViewController.h */,
-				F93055281C72806F0061BA8E /* ViewController.m */,
-				F930552A1C72806F0061BA8E /* Main.storyboard */,
+				F930553A1C7281B20061BA8E /* BRPMainViewController.h */,
+				F930553B1C7281B20061BA8E /* BRPMainViewController.m */,
+				F930553C1C7281B20061BA8E /* BRPMainViewController.xib */,
 				F930552D1C72806F0061BA8E /* Assets.xcassets */,
 				F930552F1C72806F0061BA8E /* LaunchScreen.storyboard */,
 				F93055321C72806F0061BA8E /* Info.plist */,
@@ -105,6 +105,7 @@
 		F93055161C72806F0061BA8E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BRP;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Amador Navarro Lucas";
 				TargetAttributes = {
@@ -136,9 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F930553E1C7281B20061BA8E /* BRPMainViewController.xib in Resources */,
 				F93055311C72806F0061BA8E /* LaunchScreen.storyboard in Resources */,
 				F930552E1C72806F0061BA8E /* Assets.xcassets in Resources */,
-				F930552C1C72806F0061BA8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F93055291C72806F0061BA8E /* ViewController.m in Sources */,
+				F930553D1C7281B20061BA8E /* BRPMainViewController.m in Sources */,
 				F93055261C72806F0061BA8E /* AppDelegate.m in Sources */,
 				F93055231C72806F0061BA8E /* main.m in Sources */,
 			);
@@ -158,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F930552A1C72806F0061BA8E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F930552B1C72806F0061BA8E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F930552F1C72806F0061BA8E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

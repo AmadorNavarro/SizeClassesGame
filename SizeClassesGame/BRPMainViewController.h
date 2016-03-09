@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BRPMainViewController.h
 //  SizeClassesGame
 //
 //  Created by Amador Navarro Lucas on 15/02/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BRPMainViewController : UIViewController
 
 @end
-
